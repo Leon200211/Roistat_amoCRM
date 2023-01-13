@@ -413,7 +413,7 @@ abstract class BaseUser extends BaseController
 
 
 
-        $this->amoCRM->sendApplication();
+        $this->amoCRM->amoCRMScript();
 
 
         $answerSuccess = $this->messages['addSuccess'];

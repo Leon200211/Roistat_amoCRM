@@ -10,6 +10,7 @@
   <component name="ComposerSettings">
     <execution />
   </component>
+  <component name="PhpDebugGeneral" listening_started="true" />
   <component name="PhpServers">
     <servers>
       <server host="roistat.amocrm" id="1fed15bf-6d6c-4c54-be8e-77aa664cb59c" name="roistat.amocrm" />
@@ -25,6 +26,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -44,7 +46,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1673596504146</updated>
-      <workItem from="1673596505409" duration="8666000" />
+      <workItem from="1673596505409" duration="15040000" />
     </task>
     <servers />
   </component>
