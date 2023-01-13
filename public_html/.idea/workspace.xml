@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a2e2a5b6-b376-4cfc-9f1b-76a77975b1a3" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="PhpServers">
+    <servers>
+      <server host="roistat.amocrm" id="1fed15bf-6d6c-4c54-be8e-77aa664cb59c" name="roistat.amocrm" />
+    </servers>
+  </component>
+  <component name="ProjectId" id="2KGMXEdrJIe7RCv3eKM5pItOegK" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/core/user/controllers" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\OpenServer\domains\Roistat_amoCRM\public_html\core\user\controllers" />
+      <recent name="C:\OpenServer\domains\Roistat_amoCRM\public_html\core\user\views\css" />
+      <recent name="C:\OpenServer\domains\Roistat_amoCRM\public_html\core\user\views\img" />
+      <recent name="C:\OpenServer\domains\Roistat_amoCRM\public_html\core\user\views\include\form_templates" />
+      <recent name="C:\OpenServer\domains\Roistat_amoCRM\public_html\core\user\views\include" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a2e2a5b6-b376-4cfc-9f1b-76a77975b1a3" name="Default Changelist" comment="" />
+      <created>1673596504146</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1673596504146</updated>
+      <workItem from="1673596505409" duration="4871000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

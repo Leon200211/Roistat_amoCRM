@@ -1,0 +1,124 @@
+Fault: 13-01-2023 11:19:48 - Class "core\user\controllers\IndexController" does not exist
+file C:\OpenServer\domains\Roistat_amoCRM\public_html\core\base\controllers\BaseController.php
+ In line56
+
+Fault: 13-01-2023 11:20:39 - Class "core\user\controllers\IndexController" does not exist
+file C:\OpenServer\domains\Roistat_amoCRM\public_html\core\base\controllers\BaseController.php
+ In line56
+
+Fault: 13-01-2023 11:21:12 - Не верное имя файла для подключения - core/admin/controllers/ShowController
+file C:\OpenServer\domains\Roistat_amoCRM\public_html\core\base\settings\internal_settings.php
+ In line38
+
+Fault: 13-01-2023 11:21:24 - Не верное имя файла для подключения - core/admin/controllers/ShowController
+file C:\OpenServer\domains\Roistat_amoCRM\public_html\core\base\settings\internal_settings.php
+ In line38
+
+Fault: 13-01-2023 11:21:27 - Не верное имя файла для подключения - core/admin/controllers/ShowController
+file C:\OpenServer\domains\Roistat_amoCRM\public_html\core\base\settings\internal_settings.php
+ In line38
+
+Fault: 13-01-2023 11:21:38 - Не верное имя файла для подключения - core/admin/controllers/IndexController
+file C:\OpenServer\domains\Roistat_amoCRM\public_html\core\base\settings\internal_settings.php
+ In line38
+
+Fault: 13-01-2023 11:21:46 - Не верное имя файла для подключения - core/admin/controllers/AddController
+file C:\OpenServer\domains\Roistat_amoCRM\public_html\core\base\settings\internal_settings.php
+ In line38
+
+Fault: 13-01-2023 11:22:16 - Не верное имя файла для подключения - core/user/controllers/UserController
+file C:\OpenServer\domains\Roistat_amoCRM\public_html\core\base\settings\internal_settings.php
+ In line38
+
+Fault: 13-01-2023 11:22:33 - Не верное имя файла для подключения - core/user/controllers/UserController
+file C:\OpenServer\domains\Roistat_amoCRM\public_html\core\base\settings\internal_settings.php
+ In line38
+
+Fault: 13-01-2023 11:22:40 - Не верное имя файла для подключения - core/user/controllers/UserController
+file C:\OpenServer\domains\Roistat_amoCRM\public_html\core\base\settings\internal_settings.php
+ In line38
+
+Fault: 13-01-2023 11:22:44 - Не верное имя файла для подключения - core/user/controllers/UserController
+file C:\OpenServer\domains\Roistat_amoCRM\public_html\core\base\settings\internal_settings.php
+ In line38
+
+Fault: 13-01-2023 11:22:51 - Не верное имя файла для подключения - core/user/controllers/UserController
+file C:\OpenServer\domains\Roistat_amoCRM\public_html\core\base\settings\internal_settings.php
+ In line38
+
+Fault: 13-01-2023 11:23:45 - Не верное имя файла для подключения - core/user/controllers/UserController
+file C:\OpenServer\domains\Roistat_amoCRM\public_html\core\base\settings\internal_settings.php
+ In line38
+
+Fault: 13-01-2023 11:24:23 - Не верное имя файла для подключения - core/user/controllers/UserController
+file C:\OpenServer\domains\Roistat_amoCRM\public_html\core\base\settings\internal_settings.php
+ In line38
+
+Fault: 13-01-2023 11:32:35 - Не верное имя файла для подключения - core/user/controllers/Model
+file C:\OpenServer\domains\Roistat_amoCRM\public_html\core\base\settings\internal_settings.php
+ In line38
+
+Fault: 13-01-2023 11:32:39 - Не верное имя файла для подключения - core/user/controllers/Model
+file C:\OpenServer\domains\Roistat_amoCRM\public_html\core\base\settings\internal_settings.php
+ In line38
+
+Fault: 13-01-2023 11:33:23 - Не верное имя файла для подключения - core/user/controllers/Model
+file C:\OpenServer\domains\Roistat_amoCRM\public_html\core\base\settings\internal_settings.php
+ In line38
+
+Fault: 13-01-2023 11:34:16 - Не верное имя файла для подключения - core/user/controllers/Model
+file C:\OpenServer\domains\Roistat_amoCRM\public_html\core\base\settings\internal_settings.php
+ In line38
+
+Fault: 13-01-2023 11:34:17 - Не верное имя файла для подключения - core/user/controllers/Model
+file C:\OpenServer\domains\Roistat_amoCRM\public_html\core\base\settings\internal_settings.php
+ In line38
+
+Fault: 13-01-2023 11:34:21 - Не верное имя файла для подключения - core/user/controllers/Model
+file C:\OpenServer\domains\Roistat_amoCRM\public_html\core\base\settings\internal_settings.php
+ In line38
+
+Fault: 13-01-2023 11:36:33 - Отсутствует шаблон - templates/default/add
+file C:\OpenServer\domains\Roistat_amoCRM\public_html\core\base\controllers\BaseController.php
+ In line121
+
+Fault: 13-01-2023 11:39:36 - Отсутствует шаблон - templates/default/add
+file C:\OpenServer\domains\Roistat_amoCRM\public_html\core\base\controllers\BaseController.php
+ In line121
+
+Fault: 13-01-2023 11:41:40 - Отсутствует шаблон - templates/default/add
+file C:\OpenServer\domains\Roistat_amoCRM\public_html\core\base\controllers\BaseController.php
+ In line121
+
+Fault: 13-01-2023 11:41:41 - Отсутствует шаблон - templates/default/add
+file C:\OpenServer\domains\Roistat_amoCRM\public_html\core\base\controllers\BaseController.php
+ In line121
+
+Fault: 13-01-2023 11:42:50 - Отсутствует шаблон - templates/user/views/add
+file C:\OpenServer\domains\Roistat_amoCRM\public_html\core\base\controllers\BaseController.php
+ In line121
+
+Fault: 13-01-2023 11:44:01 - Отсутствует шаблон - include/header
+file C:\OpenServer\domains\Roistat_amoCRM\public_html\core\base\controllers\BaseController.php
+ In line121
+
+Fault: 13-01-2023 15:26:49 - Не верное имя файла для подключения - core/admin/controllers/CreatesitemapController
+file C:\OpenServer\domains\Roistat_amoCRM\public_html\core\base\settings\internal_settings.php
+ In line38
+
+Fault: 13-01-2023 15:32:21 - Не найден шаблон C:/OpenServer/domains/Roistat_amoCRM/public_html/core/admin/views/include/form_templates/core/user/views/.php
+file C:\OpenServer\domains\Roistat_amoCRM\public_html\core\user\views\add.php
+ In line20
+
+Fault: 13-01-2023 15:33:19 - Не найден шаблон C:/OpenServer/domains/Roistat_amoCRM/public_html/core/admin/views/include/form_templates/core/user/views/.php
+file C:\OpenServer\domains\Roistat_amoCRM\public_html\core\user\views\add.php
+ In line20
+
+Fault: 13-01-2023 15:33:45 - Не найден шаблон C:/OpenServer/domains/Roistat_amoCRM/public_html/core/admin/views/include/form_templates/inputForm.php
+file C:\OpenServer\domains\Roistat_amoCRM\public_html\core\user\views\add.php
+ In line20
+
+Fault: 13-01-2023 15:34:29 - Не найден шаблон C:/OpenServer/domains/Roistat_amoCRM/public_html/core/admin/views/include/form_templates/inputForm.php
+file C:\OpenServer\domains\Roistat_amoCRM\public_html\core\user\views\add.php
+ In line20
+

@@ -1,0 +1,16 @@
+php_flag magic_quotes_gpc Off
+
+php_value upload_max_filesize 500M
+
+AddDefaultCharset utf-8
+
+DirectoryIndex index.php
+
+
+RewriteEngine on
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !favicon.ico
+
+
+RewriteRule ^(.*) index.php
