@@ -122,3 +122,19 @@ Fault: 13-01-2023 15:34:29 - Не найден шаблон C:/OpenServer/domain
 file C:\OpenServer\domains\Roistat_amoCRM\public_html\core\user\views\add.php
  In line20
 
+Fault: 13-01-2023 16:03:39 - Не верное имя файла для подключения - core/user/controllers/FileEdit
+file C:\OpenServer\domains\Roistat_amoCRM\public_html\core\base\settings\internal_settings.php
+ In line38
+
+Fault: 13-01-2023 16:04:47 - Не верное имя файла для подключения - core/user/controllers/FileEdit
+file C:\OpenServer\domains\Roistat_amoCRM\public_html\core\base\settings\internal_settings.php
+ In line38
+
+Fault: 13-01-2023 16:07:31 - Не верное имя файла для подключения - core/user/controllers/FileEdit
+file C:\OpenServer\domains\Roistat_amoCRM\public_html\core\base\settings\internal_settings.php
+ In line38
+
+Fault: 13-01-2023 16:09:18 - Не верное имя файла для подключения - core/user/controllers/FileEdit
+file C:\OpenServer\domains\Roistat_amoCRM\public_html\core\base\settings\internal_settings.php
+ In line38
+

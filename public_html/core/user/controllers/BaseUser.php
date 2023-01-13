@@ -8,16 +8,17 @@ use core\base\controllers\BaseController;
 use core\base\exceptions\RouteException;
 use core\base\settings\Settings;
 use Couchbase\PasswordAuthenticator;
-//use libraries\FileEdit;
+use core\base\controllers\AmocrmController;
 
 
-//require_once $_SERVER['DOCUMENT_ROOT'] . PATH . 'libraries/functions.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . PATH . 'libraries/functions.php';
 
 // базовый контроллер для админки
 abstract class BaseUser extends BaseController
 {
 
     protected $model;  // для обращения к моделям
+    protected $amoCRM;  // для обращения к amoCRM
 
     protected $table;
     protected $columns;
@@ -54,6 +55,7 @@ abstract class BaseUser extends BaseController
         //if(!$this->model) $this->model = Model::getInstance();
         if(!$this->menu) $this->menu = Settings::get('projectTables');
         if(!$this->userPath) $this->userPath = PATH . Settings::get('routes')['user']['alias'];
+        if(!$this->amoCRM) $this->amoCRM = AmocrmController::getInstance();
 
 
         if(!$this->templateArr) $this->templateArr = Settings::get('templateArr');
@@ -264,21 +266,13 @@ abstract class BaseUser extends BaseController
         // если метод Post
         if($this->isPost()){
 
-            echo 123;
-
             // валидация данных
             $this->clearPostFields($settings);
-            $this->table = $this->clearStr($_POST['table']);
-            unset($_POST['table']);
 
-            // проверяем пришла ли таблица
-            if(isset($this->table)){
-                $this->createTableData($settings);
 
-                // редактирование или добавление новых данных
-                $this->editData();
 
-            }
+            // тут будет отправка в amo сrm
+            $this->editData();
 
         }
 
@@ -286,7 +280,7 @@ abstract class BaseUser extends BaseController
     }
 
 
-    // добавляет данные у сессию
+    // добавляет данные в сессию
     protected function addSessionData($arr){
         if(!$arr) $arr = $_POST;
 
@@ -415,91 +409,26 @@ abstract class BaseUser extends BaseController
 
 
     // редактирование или добавление новых данных после валидации
-    protected function editData($returnId = false){
-
-        $id = false;
-        $method = 'add';
-        $where = [];
-
-        // проверка редактируем мы или добавляем данные
-        if($_POST[$this->columns['id_row']]){
-            $id = is_numeric($_POST[$this->columns['id_row']]) ?
-                $this->clearNum($_POST[$this->columns['id_row']]) :
-                $this->clearStr($_POST[$this->columns['id_row']]);
-
-            if($id){
-                // добавляем условие where и переопределяем метод
-                $where = [$this->columns['id_row'] => $id];
-                $method = 'update';
-            }
-        }
-
-        foreach ($this->columns as $key => $item){
-            // заменяем первичный ключ на NULL если его нет
-            if($key == $this->columns['id_row'] and $_POST[$this->columns['id_row']] === ''){
-                $_POST[$this->columns['id_row']] = NULL;
-            }
+    protected function editData(){
 
 
-            // если встречаем дату
-            if(is_array($item) and ($item['Type'] === 'date' or $item['Type'] === 'datetime')){
-                // другая короткая запись if
-                !isset($_POST[$key]) && $_POST[$key] = 'NOW()';
-            }
-        }
 
-        // обработка файлов
-        $this->createFile();
-
-        // создание чпу/алиасов
-        $this->createAlias($id);
-
-        // метод для работы с позициями в меню
-        $this->updateMenuPosition();
+        $this->amoCRM->sendApplication();
 
 
-        // метод формирующий поля исключения
-        $except = $this->checkExceptFields();
-
-
-        $res_id = $this->model->$method($this->table, [
-            'files' => $this->fileArray,
-            'where' => $where,
-            'return_id' => true,
-            'except' => $except
-        ]);
-
-
-        // если добавляли данные
-        if(!$id and $method === 'add'){
-            $_POST[$this->columns['id_row']] = $res_id;
-            $answerSuccess = $this->messages['addSuccess'];
-            $answerFail = $this->messages['addFail'];
-        }else{  // если редактировали данные
-            $answerSuccess = $this->messages['updateSuccess'];
-            $answerFail = $this->messages['updateFail'];
-        }
-
-
-        // get_defined_vars — Возвращает массив всех определённых переменных
-        $this->expansion(get_defined_vars());
-
-
-        // проверка алиасов
-        $result = $this->checkAlias($_POST[$this->columns['id_row']]);
-
-
-        // если получилось выполнить sql запрос
-        if($res_id){
+        $answerSuccess = $this->messages['addSuccess'];
+        $answerFail = $this->messages['addFail'];
+        // если получилось выполнить запрос
+        if(true){
             $_SESSION['res']['answer'] = '<div class="success">' . $answerSuccess . '</div>';
 
-            if(!$returnId) $this->redirect();
+            $this->redirect();
 
             return $_POST[$this->columns['id_row']];
         }else{  // если получили ошибку
             $_SESSION['res']['answer'] = '<div class="error">' . $answerFail . '</div>';
 
-            if(!$returnId) $this->redirect();
+            $this->redirect();
         }
 
     }
@@ -598,8 +527,6 @@ abstract class BaseUser extends BaseController
 
         $fileEdit = new FileEdit();
         $this->fileArray = $fileEdit->addFile();
-
-
 
 
     }
